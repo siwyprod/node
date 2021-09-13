@@ -1,7 +1,5 @@
-// wiki.js - Wiki route module
-
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // Home page route
 router.get('/', function(req, res) {
@@ -14,7 +12,3 @@ router.get('/about', function(req, res) {
 });
 
 module.exports = router;
-
-var wiki = require('./wiki.js');
-// ...
-app.use('/wiki', wiki);
